@@ -1,0 +1,74 @@
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "Cuong2",
+    "password" : "1234"
+}
+
+###
+
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "Huyen",
+    "password" : "1234"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username" : "Cuong2",
+    "password" : "1234"
+}
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username" : "Huyen",
+    "password" : "1234"
+}
+
+###
+POST http://localhost:5000/post/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmRhMjdjZjZkNmQ0NTQ1MjAyYjBlM2IiLCJpYXQiOjE2NTg1ODk3MTd9.Al5nSl3TXKq8HF4swFYLE11qZBoLGMHthEsibtHWLg4
+
+
+{
+    "title" : "Create",
+    "description" : "Create a new",
+    "status" : "LEARNING",
+    "url" : "hjshajshas"
+}
+
+###
+GET http://localhost:5000/post/get
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmRhMjdjZjZkNmQ0NTQ1MjAyYjBlM2IiLCJpYXQiOjE2NTg1NDk4Mzh9.L09_ukE1uS0ENtYu5lYuNrVCXk944PhiI3LnJnJb_DI
+
+
+###
+PUT http://localhost:5000/post/62da65151da4aa22f41133ef
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmRhMjdjZjZkNmQ0NTQ1MjAyYjBlM2IiLCJpYXQiOjE2NTg1MDYwMjl9.9x7bwUkzPyvEkWmafCJDe12l5Wvn1G15ntgG6vt08K4
+
+{
+    "title": "Huyen Post",
+    "description" : "Create a new 2",
+    "status" : "LEARNING",
+    "url" : "react.org"
+}
+
+###
+DELETE http://localhost:5000/post/62da65151da4aa22f41133ef
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmRhMjdjZjZkNmQ0NTQ1MjAyYjBlM2IiLCJpYXQiOjE2NTg1MDYwMjl9.9x7bwUkzPyvEkWmafCJDe12l5Wvn1G15ntgG6vt08K4
