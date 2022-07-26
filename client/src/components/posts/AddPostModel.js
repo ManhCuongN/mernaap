@@ -32,7 +32,7 @@ function AddPostModel() {
   };
 
   return (
-    <Modal show={showModalAddPost} animation={false} onHide={onCloseDialog}>
+    <Modal show={showModalAddPost} onHide={onCloseDialog}>
       <Modal.Header closeButton>
         <Modal.Title>What do you want to learn?</Modal.Title>
       </Modal.Header>
